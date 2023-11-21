@@ -1,13 +1,6 @@
 package code20;
 import java.util.Scanner;
 
-
-
-
-
-
-	import java.util.Scanner;
-
 	public class Arthematic {
 	
 		public static void main(String arg[])
@@ -29,12 +22,12 @@ import java.util.Scanner;
 				c=a/b;
 				System.out.println("Result:"+c);
 			}
+				
 			catch(ArithmeticException e)
 			{
 				System.out.println("Error:"+e.getMessage());
 				System.out.println("Error:"+e);
 			}
-			// here program ends.
-			System.out.println("End of Program...");
+		
 		}
 	}
