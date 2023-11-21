@@ -2,31 +2,42 @@ package code20;
 
 
 //Abstract Shape class
+
 abstract class Shape {
+ 
  // Abstract method to draw the shape
  public abstract void draw();
+ 
 }
 
 //Line class extending Shape
+
 class Line extends Shape {
  @Override
- public void draw() {
+ public void draw()
+ {
      System.out.println("Drawing a Line");
  }
+ 
 }
 
 //Rectangle class extending Shape
-class Rectangle extends Shape {
+class Rectangle extends Shape
+ {
  @Override
- public void draw() {
+ public void draw()
+  {
      System.out.println("Drawing a Rectangle");
  }
+  
 }
 
 //Cube class extending Shape
-class Cube extends Shape {
+class Cube extends Shape
+ {
  @Override
- public void draw() {
+ public void draw()
+  {
      System.out.println("Drawing a Cube");
  }
 }
@@ -46,7 +57,8 @@ public class Cubelinerect {
  }
 
  // Polymorphic method to draw any shape
- public static void drawShape(Shape shape) {
+ public static void drawShape(Shape shape)
+ {
      shape.draw();
  }
 }
