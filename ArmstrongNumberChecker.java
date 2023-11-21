@@ -1,10 +1,4 @@
 package code20;
-/*
-public class ArmstrongNumberChecker {
-
-}*/
-
-
 
 import java.util.Scanner;
 
@@ -17,19 +11,25 @@ public class ArmstrongNumberChecker {
 
         if (isArmstrongNumber(number)) {
             System.out.println(number + " is an Armstrong number.");
-        } else {
+        } 
+        else {
             System.out.println(number + " is not an Armstrong number.");
         }
     }
 
     // Function to check if a number is an Armstrong number
-    static boolean isArmstrongNumber(int num) {
+    static boolean isArmstrongNumber(int num)
+    {
         int originalNumber, remainder, result = 0, n = 0;
 
         originalNumber = num;
 
         // Count the number of digits
-        while (originalNumber != 0) {
+
+        
+        while (originalNumber != 0)
+            
+        {
             originalNumber /= 10;
             ++n;
         }
@@ -37,7 +37,9 @@ public class ArmstrongNumberChecker {
         originalNumber = num;
 
         // Calculate the sum of nth power of individual digits
-        while (originalNumber != 0) {
+        while (originalNumber != 0)
+            {
+                
             remainder = originalNumber % 10;
             result += Math.pow(remainder, n);
             originalNumber /= 10;
